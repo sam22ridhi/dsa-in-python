@@ -24,10 +24,10 @@ def mergesort(L):
     n = len(L)
     if n <= 1:
         return L
-    left_Half = mergesort(L[:n//2])
-    right_Half = mergesort(L[n//2:])
-    sorted_Merged_List = merge(left_Half, right_Half)
-    return sorted_Merged_List
+    left_half = mergesort(L[:n//2])
+    right_half = mergesort(L[n//2:])
+    sorted_merged_list = merge(left_half, right_half)
+    return sorted_merged_list
   
 input = [5, 2, 8, 12, 3, 1]
 sorted_list = mergesort(input)
